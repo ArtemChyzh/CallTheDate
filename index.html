@@ -13,7 +13,25 @@
             <h1 id="activity"></h1>
             <a id="link"></a>
             <p id="new">&#x21BB;<p>
+            <button id="invite">Invite somebody&#x1F609;</button>
         </div>
+        <form method="post" action="mail.php">
+            <input id="subject" type="hidden">
+            <br>
+            <label for="who">What's your name?</label>
+            <br>
+            <input type="text" name="who">
+            <br>
+            <label for="whom">With whom?</label>
+            <br>
+            <input type="email" name="whom" placeholder="my-darling@love-you.com">
+            <br>
+            <label for="when">When?</label>
+            <br>
+            <input type="date" name="when">
+            <br><br>
+            <button id="submit">Don't be shy!&#xAD;</button>
+        </form>
     </main>
 </body>
 </html>

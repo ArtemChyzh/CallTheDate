@@ -37,6 +37,7 @@ async function fillDoc() {
     let activityLabel = document.getElementById("activity");
     let categoryLabel = document.getElementById("category");
     let link = document.getElementById("link");
+    let activityInput = document.getElementById("subject");
 
     const activity = await getActivityObject();
 
@@ -46,4 +47,5 @@ async function fillDoc() {
         link.setAttribute("href", activity.link);
         link.innerText = activity.link;
     }
+    activityInput.setAttribute("value", activity.activity);
 }
