@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
+    let btn = document.getElementById("new");
+    btn.addEventListener("click", function() {location.reload();});
     fillDoc();
 });
+
+
 
 async function getActivityResponse() {
     const url = "https://www.boredapi.com/api/activity";
