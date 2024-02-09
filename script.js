@@ -4,8 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     fillDoc();
 });
 
-
-
 async function getActivityResponse() {
     const url = "https://www.boredapi.com/api/activity";
     try {
@@ -29,7 +27,7 @@ async function getActivityObject() {
         let lastSubIndex = activity.lastIndexOf("with");
         activity = activity.slice(0, lastSubIndex);
     }
-    activity = "Together " + activity.toLowerCase();
+    activity = "\u{1F498}" + "Together " + activity.toLowerCase() + "\u{1F498}";
 
 
     return { "activity": activity, "category": response.type, "link": response.link };

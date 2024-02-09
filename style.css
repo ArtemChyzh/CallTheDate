@@ -1,5 +1,10 @@
+body {
+    background-image: linear-gradient(to left, #ffcce5, #ffd8b8, #b9a3e3, #2c3e50);
+    color: red;
+}
+
 html, body {
-    height: 90vh;
+    height: 95vh;
 }
 
 main {
