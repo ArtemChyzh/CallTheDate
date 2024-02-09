@@ -1,0 +1,20 @@
+html, body {
+    height: 90vh;
+}
+
+main {
+    height: 100%;
+    text-align: center;
+    display: grid;
+}
+
+.content {
+    justify-self: center;
+    align-self: center;
+    line-height: 75%;
+}
+
+#new {
+    cursor: pointer;
+    font-size: xx-large;
+}
