@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let btn = document.getElementById("new");
-    btn.addEventListener("click", function() {location.reload();});
+    let refresh = document.getElementById("new");
+    refresh.addEventListener("click", function() {location.reload();});
+    let show = document.getElementById("show");
+    let form = document.getElementById("mail");
+    show.addEventListener("click", function() {form.removeAttribute("hidden");}); 
     fillDoc();
 });
 
